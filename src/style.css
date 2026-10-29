@@ -1,0 +1,419 @@
+@import "tailwindcss";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    display: block
+}
+a {
+    transition: all 0.25s ease;
+}
+section {
+    scroll-margin-top: 100%;
+}
+button, textarea, input {
+    font: inherit;
+}
+
+/*Header and Navigation*/
+.header {
+    @apply bg-white shadow-md border-b border-gray-200 mb-5 sticky top-0 z-50;
+}
+.nav-bar {
+    @apply flex items-center justify-between px-6 py-4 rounded-[20px] bg-yellow-200;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.headings h1 {
+    @apply text-2xl font-bold text-gray-900;
+    letter-spacing: 1px;
+}
+.headings p {
+    @apply text-sm text-gray-500 text-center;
+}
+.nav-links {
+    @apply flex items-center gap-6 list-none m-0 p-0;
+}
+.nav-links a {
+    @apply no-underline text-gray-700 font-medium;
+    display: inline-block;
+    padding: 6px 0;
+}
+.nav-links a.active, .nav-links a:hover {
+    @apply text-blue-600 font-bold;
+}
+
+/*Home Section*/
+#home {
+    @apply bg-blue-100 rounded-3xl;
+    overflow: hidden;
+}
+.page {
+    @apply flex items-stretch gap-5 bg-blue-200 rounded-2xl shadow-md;
+    max-width: 1200px;
+    min-height: 420px;
+    margin: 24px auto 60px;
+    padding: 0 20px;
+}
+.social-media {
+    @apply m-2 flex flex-col gap-3.5 items-center justify-center bg-white rounded-2xl shadow-md;
+    width: 72px;
+    min-width: 72px;
+    margin: 20px 0;
+    padding: 16px 10px;
+}
+.social-link {
+    @apply flex items-center justify-center bg-blue-800 rounded-xl;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+}
+.social-link:hover{
+    @apply bg-blue-600;
+    transform: translateY(-3px);
+}
+.social-link img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+.main {
+    @apply flex items-center justify-between gap-8 bg-white rounded-3xl shadow-md;
+    flex: 1;
+    min-width: 0;
+    margin: 20px 20px 20px 0;
+    padding: 35px;
+}
+.introduction {
+    @apply flex flex-col gap-3;
+    flex: 1;
+    min-width: 0;
+}
+.introduction h2 {
+    @apply text-4xl font-bold text-shadow-gray-900;
+    line-height: 1.2;
+}
+.greeting {
+    @apply text-gray-600 font-bold;
+}
+.role {
+    @apply text-xl font-medium text-blue-700;
+}
+.description {
+    @apply text-gray-600;
+    max-width: 420px;
+}
+.hero-buttons {
+    @apply flex flex-wrap gap-3 mt-4;
+}
+.btn {
+    @apply inline-flex items-center justify-center rounded-xl font-semibold no-underline;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.primary-btn {
+    @apply bg-blue-600 text-white;
+    border: 2px solid #2563eb;
+}
+.primary-btn:hover {
+    @apply bg-blue-700;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+.secondary-btn {
+    @apply text-blue-700 bg-white;
+    border: 2px solid #2563eb;
+}
+.secondary-btn:hover {
+    @apply bg-blue-50;
+    transform: translateY(-2px);
+}
+.btn:focus-visible,
+.nav-links a:focus-visible,
+.social-link:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 4px;
+}
+
+/*Profile Picture*/
+.pfp {
+    @apply flex items-center justify-center;
+    flex-shrink: 0;
+}
+.pfp img {
+    @apply w-[210px] h-[210px] object-cover rounded-[50%];
+    border: 6px solid #dbeafe;
+}
+
+/*Shared Styles*/
+#about,
+#skills,
+#services,
+#contact {
+    @apply bg-blue-100 rounded-2xl shadow-md;
+    max-width: 1200px;
+    min-height: 420px;
+    margin: 0 auto 70px;
+    padding: 40px 24px;
+}
+
+.about-heading,
+.skills,
+.services,
+.contact {
+    width: 100%;
+}
+
+.about-heading,
+.skills > h2,
+.services > h1,
+.contact > h1 {
+    text-align: center;
+}
+
+.about-heading h1,
+.skills h2,
+.services h1,
+.contact h1 {
+    @apply text-3xl font-bold text-gray-900;
+    margin-bottom: 12px;
+}
+
+.about-heading p,
+.skill-description,
+.service-description,
+.contact > p {
+    @apply text-gray-600;
+}
+
+.about-heading p {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/*Additional About Elements*/
+.about-me {
+    @apply flex flex-row items-center justify-center gap-2.5 bg-white rounded-2xl shadow-md;
+    margin-top: 35px;
+}
+.about-image {
+    @apply flex flex-col gap-[40px];
+    padding: 20px;
+}
+.about-image img {
+    @apply size-12 object-cover;
+    height: 210px;
+    width: 210px;
+    border: 6px solid #dbeafe;
+    border-radius: 20px;
+}
+.about-details {
+    @apply bg-blue-100 rounded-2xl shadow-md;
+    width: 520px;
+    height: 400px;
+    padding: 20px;
+}
+.about-details h2 {
+    @apply text-gray-900 font-medium text-3xl;
+    text-align: center;
+}
+.about-detail-card {
+    @apply list-none;
+    font-size: 18px;
+    padding: 20px;
+}
+.about-detail-card li {
+    @apply text-gray-600;
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e7eb;
+
+}
+.about-detail-card strong {
+    @apply text-gray-950;
+}
+.cv {
+    @apply flex justify-center;
+    margin-top: 24px;
+}
+
+/*Skills Section*/
+.skill {
+    @apply flex flex-col items-center gap-5 bg-white rounded-2xl shadow-md; 
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto 24px;
+
+}
+.skill-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skill-info {
+    @apply flex flex-row justify-between gap-3;
+    margin-bottom: 10px;
+}
+.skill-info h3 {
+    @apply text-gray-900 font-medium text-lg;
+    text-align: center;
+}
+.skill-info span {
+    @apply font-bold text-blue-700
+}
+.skill-bar {
+    @apply bg-blue-50 rounded-[999px] shadow-md;
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+}
+.skill-progress {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+.html-progress {
+    width: 75%;
+}
+.css-progress {
+    width: 85%;
+}
+
+/*Services Section*/
+.service-description {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.service-container {
+    @apply grid gap-6;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 30px;
+}
+.service-card {
+    @apply bg-white rounded-2xl shadow-md;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+}
+.service-card h3 {
+    @apply text-xl font-bold text-blue-700;
+    margin-bottom: 14px;
+}
+.service-card ul {
+    @apply list-none;
+}
+.service-card li {
+    @apply text-gray-600;
+    padding: 5px 0;
+}
+.service-card li::before {
+    content: "✓";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.service-card li p {
+    @apply text-sm text-gray-500;
+    margin-left: 24px;
+}
+
+/*Contact Section*/
+.contact p {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.contact-container {
+    @apply grid gap-5;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 30px 0;
+}
+.contact-card {
+    @apply bg-white text-center shadow-md rounded-2xl;
+    padding: 24px;
+}
+.contact-card ul {
+    @apply bg-blue-100 rounded-2xl list-none p-3;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.contact-card ul:hover {
+    transform: translateY(-5px)
+}
+.contact-card li {
+    @apply flex flex-col items-center;
+}
+.contact-card li img {
+    @apply w-[40px] h-[40px] object-cover rounded-2xl;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #155dfc;
+}
+.contact-card p {
+    @apply text-gray-500;
+    overflow-wrap: anywhere;
+}
+.contact-card p:hover {
+    @apply text-blue-700;
+}
+
+/*Form*/
+#form {
+    @apply bg-white rounded-2xl shadow-md;
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: 30px;
+}
+#form h2 {
+    @apply text-[30px] text-gray-900 font-bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#form label {
+    @apply block text-gray-700 font-semibold;
+    margin: 16px 0 6px;
+}
+#form input {
+    @apply w-full rounded-2xl border border-gray-300 bg-gray-50 text-gray-900;
+    padding: 12px 24px;
+}
+#form textarea {
+    @apply w-full rounded-2xl border border-gray-300 bg-gray-50 text-gray-900;
+    padding: 12px 24px;
+    resize: vertical;
+    min-height: 120px;
+}
+#form input:focus,
+#form textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 15%);
+    background: white;
+}
+#form button {
+    margin-top: 24px;
+}
+
+/*Footer*/
+.footer {
+    @apply bg-amber-200 rounded-2xl shadow-md text-center;
+    max-width: 1400px;
+    padding: 24px 16px;
+}
+.footer p {
+    @apply text-sm text-gray-900;
+}
+
