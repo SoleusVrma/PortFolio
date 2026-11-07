@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a freelance full-stack developer working in 15+ programming languages.">
+    <title>Developer Portfolio</title>
+    <link rel="icon" href="/images/headfavicon.png" type="image/png">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="body" id="body">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="header" id="header">
+        <nav class="nav-bar" id="nav-bar" aria-label="Main navigation">
+            <a href="#hero" class="brand" aria-label="Back to top">
+                <img src="/images/headfavicon.png" alt="" class="headfavicon" width="32" height="32">
+            </a>
+            
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <section class="hero" id="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="hero-badge">Polyglot Developer</p>
+                <h1 class="hero-heading" id="hero-heading">Freelance Developer and Code Generalist</h1>
+                <p class="hero-text">I architect and implement complex systems in 15+ languages.</p>
+
+                <ul class="hero-tags" aria-label="Main languages">
+                    <li class="hero-tag">JavaScript</li>
+                    <li class="hero-tag">TypeScript</li>
+                    <li class="hero-tag">Python</li>
+                    <li class="hero-tag">Go</li>
+                    <li class="hero-tag">Rust</li>
+                    <li class="hero-tag">C/C++</li>
+                    <li class="hero-tag">Java</li>
+                    <li class="hero-tag">Swift</li>
+                    <li class="hero-tag">…</li>
+                </ul>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="lets-work-together">Let's work together</a>
+                    <a href="#projects" class="btn btn-secondary" id="view-my-work">View my work</a>
+                </div>
+            </div>
+
+            <div class="terminal" aria-hidden="true">
+                <div class="terminal-bar">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">developer@portfolio ~</span>
+                </div>
+                <pre class="terminal-body"><code>$ whoami
+FullStackDeveloper
+$ ls -la skills/
+drwxr-xr-x  20+ programming_languages
+drwxr-xr-x  frontend_frameworks
+drwxr-xr-x  backend_systems
+drwxr-xr-x  devops_tools
+drwxr-xr-x  databases
+drwxr-xr-x  problem_solving
+$</code></pre>
+            </div>
+            <img src="/images/pfp1.jpg" alt="Portrait of the developer" class="heroimage" id="heroimage" width="320" height="320">
+        </section>
+
+        <section class="tech-skills" id="skills" aria-labelledby="skills-heading">
+            <h2 class="tech-skills-heading" id="skills-heading">Tech Stack and Skills</h2>
+            <p class="tech-skills-text">With knowledge in 20+ programming languages and dozens of frameworks, I can architect and implement solutions across the entire technology stack.</p>
+
+            <div class="tech-skills-tabs" role="tablist" aria-label="Skill categories">
+                <button type="button" role="tab" class="tech-skills-tab is-active" id="tab-languages" aria-selected="true" aria-controls="panel-languages">Languages</button>
+                <button type="button" role="tab" class="tech-skills-tab" id="tab-frontend" aria-selected="false" aria-controls="panel-frontend" tabindex="-1">Frontend</button>
+                <button type="button" role="tab" class="tech-skills-tab" id="tab-backend" aria-selected="false" aria-controls="panel-backend" tabindex="-1">Backend</button>
+                <button type="button" role="tab" class="tech-skills-tab" id="tab-databases" aria-selected="false" aria-controls="panel-databases" tabindex="-1">Databases</button>
+                <button type="button" role="tab" class="tech-skills-tab" id="tab-mobile" aria-selected="false" aria-controls="panel-mobile" tabindex="-1">Mobile</button>
+            </div>
+
+            <div role="tabpanel" class="tech-skills-panel" id="panel-languages" aria-labelledby="tab-languages">
+                <ul class="tech-skills-grid">
+                    <li class="tech-skills-item">
+                        <img src="/images/js.png" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">JavaScript</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/typescript.webp" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">TypeScript</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/python.jpg" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">Python</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/go.png" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">Go</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/rust.png" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">Rust</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/c.jpg" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">C</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/cpp.jpg" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">C++</h3>
+                    </li>
+                    <li class="tech-skills-item">
+                        <img src="/images/java.png" alt="" class="tech-icon" width="48" height="48">
+                        <h3 class="tech-skills-name">Java</h3>
+                    </li>
+                </ul>
+            </div>
+
+<!-- Other panels: fill these in and toggle with JS -->
+            <div role="tabpanel" class="tech-skills-panel" id="panel-frontend" aria-labelledby="tab-frontend" hidden>
+                <ul class="tech-skills-grid"></ul>
+            </div>
+            <div role="tabpanel" class="tech-skills-panel" id="panel-backend" aria-labelledby="tab-backend" hidden>
+                <ul class="tech-skills-grid"></ul>
+            </div>
+            <div role="tabpanel" class="tech-skills-panel" id="panel-databases" aria-labelledby="tab-databases" hidden>
+                <ul class="tech-skills-grid"></ul>
+            </div>
+            <div role="tabpanel" class="tech-skills-panel" id="panel-mobile" aria-labelledby="tab-mobile" hidden>
+                <ul class="tech-skills-grid"></ul>
+            </div>
+        </section>
+
+        <section class="projects" id="projects" aria-labelledby="projects-heading">
+            <h2 class="projects-heading" id="projects-heading">Featured Projects</h2>
+            <p class="projects-text">A selection of my recent work. Each project is built with performance and user experience in mind.</p>
+
+            <ul class="projects-list">
+                <li class="projects-item">
+                    <article class="project-card">
+                        <h3 class="project-card-title">IP Geolocation Tool</h3>
+                        <ul class="projects-tags" aria-label="Technologies used">
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                            <li>IP Geolocation</li>
+                            <li>+4</li>
+                        </ul>
+                        <p class="projects-description">Python app with a GUI and map visualization.</p>
+                        <a href="#" class="projects-link" target="_blank" rel="noopener noreferrer">View project<span class="visually-hidden">: IP Geolocation Tool</span></a>
+                    </article>
+                </li>
+                <li class="projects-item">
+                    <article class="project-card">
+                        <h3 class="project-card-title">Connect Four (C)</h3>
+                        <ul class="projects-tags" aria-label="Technologies used">
+                            <li>C</li>
+                            <li>Algorithm Analysis</li>
+                            <li>Game Logic</li>
+                            <li>+3</li>
+                        </ul>
+                        <p class="projects-description">Console game showcasing algorithmic thinking.</p>
+                        <a href="#" class="projects-link" target="_blank" rel="noopener noreferrer">View project<span class="visually-hidden">: Connect Four</span></a>
+                    </article>
+                </li>
+                <li class="projects-item">
+                    <article class="project-card">
+                        <h3 class="project-card-title">Analytics Dashboard</h3>
+                        <ul class="projects-tags" aria-label="Technologies used">
+                            <li>TypeScript</li>
+                            <li>React.js</li>
+                            <li>Charts</li>
+                            <li>+5</li>
+                        </ul>
+                        <p class="projects-description">Analytics dashboard for developer productivity.</p>
+                        <a href="#" class="projects-link" target="_blank" rel="noopener noreferrer">View project<span class="visually-hidden">: Analytics Dashboard</span></a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about-me" id="about" aria-labelledby="about-heading">
+            <h2 class="about-me-title" id="about-heading">About Me</h2>
+            <p class="about-me-description">I am a passionate full-stack developer with over 5 years of experience building software across a wide range of platforms and languages.</p>
+            <p class="about-me-description">I love turning ideas into real-world applications and solving complex problems.</p>
+
+            <ul class="about-me-stats">
+                <li class="about-me-card">
+                    <p class="about-me-card-title">5+</p>
+                    <p class="about-me-card-description">Years of experience</p>
+                </li>
+                <li class="about-me-card">
+                    <p class="about-me-card-title">50+</p>
+                    <p class="about-me-card-description">Projects completed</p>
+                </li>
+                <li class="about-me-card">
+                    <p class="about-me-card-title">20+</p>
+                    <p class="about-me-card-description">Languages known</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="certifications" id="certifications" aria-labelledby="certifications-heading">
+            <h2 class="certifications-heading" id="certifications-heading">Certifications</h2>
+            <p class="certifications-text">Swipe or drag to view my certifications.</p>
+
+            <div class="certifications-carousel" role="region" aria-label="Certifications carousel" tabindex="0">
+                <ul class="certifications-track">
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert1.jpg" alt="Certificate 1" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert2.jpg" alt="Certificate 2" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert3.jpg" alt="Certificate 3" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert4.jpg" alt="Certificate 4" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert5.jpg" alt="Certificate 5" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                    <li class="certifications-item">
+                        <figure class="certification">
+                            <img src="/images/cert6.jpg" alt="Certificate 6" class="certification-image" loading="lazy">
+                            <figcaption>Certificate name · Month Year</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="certifications-controls">
+                <button type="button" class="certifications-prev" aria-label="Previous certification">&#8249;</button>
+                <button type="button" class="certifications-next" aria-label="Next certification">&#8250;</button>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <h2 class="contact-heading" id="contact-heading">Let's Connect</h2>
+            <p class="contact-description">Have a project in mind or want to discuss a collaboration? Feel free to reach out!</p>
+
+            <ul class="contact-list">
+                <li class="contact-card">
+                    <h3 class="contact-card-heading">Email</h3>
+                    <p class="contact-card-description"><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+                </li>
+                <li class="contact-card">
+                    <h3 class="contact-card-heading">Phone</h3>
+                    <p class="contact-card-description"><a href="tel:+919876543210">+91 98765 43210</a></p>
+                </li>
+                <li class="contact-card">
+                    <h3 class="contact-card-heading">Location</h3>
+                    <p class="contact-card-description">Hisar, Haryana, India</p>
+                </li>
+            </ul>
+
+            <form id="form" class="contact-form" action="#" method="post">
+                <h3 class="contact-form-heading">Send me a message</h3>
+
+                <div class="form-field">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <p class="footer-text">&copy; 2026 Developer. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/js/script.js"></script>
+</body>
+</html>
